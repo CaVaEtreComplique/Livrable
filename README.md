@@ -1,6 +1,6 @@
 # Tents And Trees
 
-Jeu programmé dans le cadre du projet de Génie Logiciel en L3 Informatique à l'Université du Mans en 2019
+Jeu programmé dans le cadre du projet de Génie Logiciel en L3 Informatique à l'Université du Mans en 2019 pour des systèmes Linux.
 
 ## Installation
 
