@@ -1,0 +1,25 @@
+source 'https://rubygems.org'
+
+gem 'native-package-installer'
+gem 'pkg-config'
+gem 'glib2'
+gem 'atk'
+gem 'cairo'
+gem 'cairo-gobject'
+gem 'gobject-introspection'
+gem 'gio2'
+gem 'gdk_pixbuf2'
+gem 'pango'
+gem 'gdk3'
+gem 'gtk2'
+gem 'gtk3'
+gem 'activerecord'
+gem 'activesupport'
+gem 'sqlite3'
+gem 'mini_portile'
+gem 'faker'
+gem 'nokogiri', '1.6.6.2'
+
+group :development do
+  gem 'rake'
+end

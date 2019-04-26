@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Count - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+<div class="nav-section">
+  <h3>Table of Contents</h3>
+
+  <ul class="link-list" role="directory">
+    <li><a href="#class-Count-label-Presentation">Presentation</a>
+    <li><a href="#class-Count-label-Methods">Methods</a>
+  </ul>
+</div>
+
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-count">::count</a>
+    
+    <li ><a href="#method-c-findFirst">::findFirst</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Count">
+  <h1 id="class-Count" class="class">
+    class Count
+  </h1>
+
+  <section class="description">
+    
+<h4 id="class-Count-label-Presentation">Presentation<span><a href="#class-Count-label-Presentation">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>The <a href="Count.html"><code>Count</code></a> class give some extended methode to <a href="Game.html"><code>Game</code></a> class</p>
+
+<h4 id="class-Count-label-Methods">Methods<span><a href="#class-Count-label-Methods">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>This class know the count and findFirst methode describe below</p>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-count" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">count</span><span
+            class="method-args">(game, state, vertHor, rank)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h4 id="method-c-count-label-Presentation">Presentation<span><a href="#method-c-count-label-Presentation">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>This class methode count the number of cell who are in a certain state inside a row or column.</p>
+
+<h5 id="method-c-count-label-Attributes">Attributes<span><a href="#method-c-count-label-Attributes">&para;</a> <a href="#top">&uarr;</a></span></h5>
+<ul><li>
+<p><code>game</code> - The <a href="Game.html"><code>Game</code></a> we are going to research in.</p>
+</li><li>
+<p><code>state</code> - The state of the cell we are looking for.</p>
+</li><li>
+<p><code>vertHor</code> - The orientation, put 0 if we are looking for a row otherwise</p>
+
+<pre>it will look for a column.</pre>
+</li><li>
+<p><code>rank</code> - The row or column number we want to do our research in.</p>
+</li></ul>
+
+<h5 id="method-c-count-label-Returns">Returns<span><a href="#method-c-count-label-Returns">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>This method returns the number of cell who are in the specified state inside a specified row or column</p>
+
+<h5 id="method-c-count-label-Exemple">Exemple<span><a href="#method-c-count-label-Exemple">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>W -&gt; white cell; T -&gt; not white cell | W | W | T | T | W | W | W | T | W | -&gt; row number 3 of game nb = <a href="Count.html#method-c-count"><code>Count.count</code></a>(game, white, 1, 3) nb will print : 6</p>
+          
+          
+
+          
+          <div class="method-source-code" id="count-source">
+            <pre><span class="ruby-comment"># File Helps/Count.rb, line 36</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Count</span>.<span class="ruby-identifier ruby-title">count</span>(<span class="ruby-identifier">game</span>, <span class="ruby-identifier">state</span>, <span class="ruby-identifier">vertHor</span>, <span class="ruby-identifier">rank</span>)
+  <span class="ruby-identifier">res</span> = <span class="ruby-value">0</span>
+  <span class="ruby-keyword">if</span>(<span class="ruby-identifier">vertHor</span><span class="ruby-operator">==</span><span class="ruby-value">0</span>)
+  <span class="ruby-comment">#Vertical</span>
+    <span class="ruby-keyword">return</span> (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">game</span>.<span class="ruby-identifier">nCol</span>).<span class="ruby-identifier">count</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">game</span>.<span class="ruby-identifier">cellAt</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">rank</span>).<span class="ruby-identifier">state</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">state</span>
+    }
+  <span class="ruby-keyword">elsif</span> (<span class="ruby-identifier">vertHor</span> <span class="ruby-operator">==</span><span class="ruby-value">1</span>)
+  <span class="ruby-comment">#Horizontal</span>
+    <span class="ruby-keyword">return</span> (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">game</span>.<span class="ruby-identifier">nRow</span>).<span class="ruby-identifier">count</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">game</span>.<span class="ruby-identifier">cellAt</span>(<span class="ruby-identifier">rank</span>, <span class="ruby-identifier">i</span>).<span class="ruby-identifier">state</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">state</span>
+    }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-findFirst" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">findFirst</span><span
+            class="method-args">(game, state, vertHor, rank)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h4 id="method-c-findFirst-label-Presentation">Presentation<span><a href="#method-c-findFirst-label-Presentation">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>This class methode find the first cell who is in a certain state inside a row or column.</p>
+
+<h5 id="method-c-findFirst-label-Attributes">Attributes<span><a href="#method-c-findFirst-label-Attributes">&para;</a> <a href="#top">&uarr;</a></span></h5>
+<ul><li>
+<p><code>game</code> - The <a href="Game.html"><code>Game</code></a> we are going to research in.</p>
+</li><li>
+<p><code>state</code> - The state of the cell we are looking for.</p>
+</li><li>
+<p><code>vertHor</code> - The orientation, put 0 if we are looking for a row otherwise</p>
+
+<pre>it will look for a column.</pre>
+</li><li>
+<p><code>rank</code> - The row or column number we want to do our research in.</p>
+</li></ul>
+
+<h5 id="method-c-findFirst-label-Returns">Returns<span><a href="#method-c-findFirst-label-Returns">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>This method returns the first cell who are in the specified state inside a specified row or column</p>
+
+<h5 id="method-c-findFirst-label-Exemple">Exemple<span><a href="#method-c-findFirst-label-Exemple">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>W -&gt; white cell; T -&gt; not white cell | T | T | T | T | W | W | W | T | W | -&gt; row number 3 of game nb = <a href="Count.html#method-c-count"><code>Count.count</code></a>(game, white, 1, 3) nb will print something like : &lt;Cell:0x42 @row=3, @column=4&gt;</p>
+          
+          
+
+          
+          <div class="method-source-code" id="findFirst-source">
+            <pre><span class="ruby-comment"># File Helps/Count.rb, line 72</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Count</span>.<span class="ruby-identifier ruby-title">findFirst</span>(<span class="ruby-identifier">game</span>, <span class="ruby-identifier">state</span>, <span class="ruby-identifier">vertHor</span>, <span class="ruby-identifier">rank</span>)
+  <span class="ruby-comment">#return the first cell of the game with the state state</span>
+  <span class="ruby-keyword">if</span>(<span class="ruby-identifier">vertHor</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>)
+  <span class="ruby-comment">#Vertical</span>
+    (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">game</span>.<span class="ruby-identifier">nCol</span>).<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">if</span>(<span class="ruby-identifier">game</span>.<span class="ruby-identifier">cellAt</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">rank</span>).<span class="ruby-identifier">state</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">state</span>)
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">game</span>.<span class="ruby-identifier">cellAt</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">rank</span>)
+      <span class="ruby-keyword">end</span>
+    }
+  <span class="ruby-keyword">elsif</span> (<span class="ruby-identifier">vertHor</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>)
+  <span class="ruby-comment">#Horizontal</span>
+    (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">game</span>.<span class="ruby-identifier">nRow</span>).<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">if</span>(<span class="ruby-identifier">game</span>.<span class="ruby-identifier">cellAt</span>(<span class="ruby-identifier">rank</span>, <span class="ruby-identifier">i</span>).<span class="ruby-identifier">state</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">state</span>)
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">game</span>.<span class="ruby-identifier">cellAt</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">rank</span>)
+      <span class="ruby-keyword">end</span>
+    }
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

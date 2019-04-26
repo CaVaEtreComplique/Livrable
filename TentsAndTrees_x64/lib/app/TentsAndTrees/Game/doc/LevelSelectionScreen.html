@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class LevelSelectionScreen - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Screen.html">Screen</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li class="calls-super" ><a href="#method-c-new">::new</a>
+    
+    <li class="calls-super" ><a href="#method-i-applyOn">#applyOn</a>
+    
+    <li ><a href="#method-i-refreshOverAllStar">#refreshOverAllStar</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-LevelSelectionScreen">
+  <h1 id="class-LevelSelectionScreen" class="class">
+    class LevelSelectionScreen
+  </h1>
+
+  <section class="description">
+    
+<pre>===== Presentation</pre>
+
+<p><a href="LevelSelectionScreen.html"><code>LevelSelectionScreen</code></a> is an inherited class from the <a href="Screen.html"><code>Screen</code></a> class. This class only needs to be initialized and refresh. It creates and implements the level selection menu from the game by creating its levels numbers.</p>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-adventure" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">adventure</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-adventureInfo" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">adventureInfo</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-overAllStars" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">overAllStars</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(manager)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h5 id="method-c-new-label-Presentation">Presentation<span><a href="#method-c-new-label-Presentation">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>This method is used to create the level selection by calling the class <a href="LevelNumbers.html"><code>LevelNumbers</code></a>. ALl images will be charged thanks to the class <a href="IconAsset.html"><code>IconAsset</code></a>. A scrolable area is also created by calling the class ScrolableArea, which contains buttons and boxes. These buttons are made by the class levelNumbers who represente the level numbers, the loc and the stars. On the page we can find the number of stars that we own contain in the box etoileTotal. All the other variable are used for the layout.</p>
+
+<h5 id="method-c-new-label-Attributes">Attributes<span><a href="#method-c-new-label-Attributes">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<pre>*+manager+ : managerUi who handle the Ui</pre>
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              <a href="Screen.html#method-c-new"><code>Screen::new</code></a>
+            </div>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File Ui/Screens/LevelSelectionScreen.rb, line 40</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">manager</span>)
+              <span class="ruby-keyword">super</span>(<span class="ruby-identifier">manager</span>.<span class="ruby-identifier">win</span>)
+              <span class="ruby-ivar">@manager</span> = <span class="ruby-identifier">manager</span>
+              <span class="ruby-comment">#Chargement de la campagne</span>
+              <span class="ruby-ivar">@adventure</span> = <span class="ruby-identifier">manager</span>.<span class="ruby-identifier">session</span>
+              <span class="ruby-identifier">screen</span> = <span class="ruby-constant">Constants</span><span class="ruby-operator">::</span><span class="ruby-constant">SCREEN</span>
+              <span class="ruby-ivar">@pad</span>=<span class="ruby-constant">Constants</span><span class="ruby-operator">::</span><span class="ruby-constant">BUTTON_PADDING</span>
+              <span class="ruby-ivar">@ic</span>=<span class="ruby-constant">IconAsset</span>.<span class="ruby-identifier">new</span>
+              <span class="ruby-ivar">@gtkObject</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Table</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">3</span>,<span class="ruby-value">3</span>)
+              <span class="ruby-ivar">@scrol</span>=<span class="ruby-constant">ScrollableArea</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:vertical</span>)
+              <span class="ruby-ivar">@boxV</span>=<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Box</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:vertical</span>)
+              <span class="ruby-ivar">@overAllStars</span> = <span class="ruby-ivar">@adventure</span>.<span class="ruby-identifier">overAllStars</span>.<span class="ruby-identifier">to_s</span>
+
+              <span class="ruby-ivar">@etoileTotal</span>=<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Box</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:horizontal</span>)
+              <span class="ruby-identifier">a</span>=<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Alignment</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0.5</span>,<span class="ruby-value">0</span>,<span class="ruby-value">0.5</span>,<span class="ruby-value">1</span>)
+              <span class="ruby-identifier">a</span>.<span class="ruby-identifier">add</span>(<span class="ruby-ivar">@boxV</span>)
+              <span class="ruby-ivar">@gtkObject</span>.<span class="ruby-identifier">attach</span>(<span class="ruby-identifier">a</span>,<span class="ruby-value">0</span>,<span class="ruby-value">1</span>,<span class="ruby-value">1</span>,<span class="ruby-value">2</span>)
+
+              <span class="ruby-ivar">@boxV</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-ivar">@etoileTotal</span> ,<span class="ruby-value">expand:</span> <span class="ruby-keyword">false</span>, <span class="ruby-value">fill:</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">padding:</span><span class="ruby-ivar">@pad</span>)
+              <span class="ruby-ivar">@st</span>=<span class="ruby-constant">Star</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>,<span class="ruby-value">1</span>)
+              <span class="ruby-ivar">@etoileTotal</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-ivar">@st</span>.<span class="ruby-identifier">stars</span>,<span class="ruby-value">expand:</span> <span class="ruby-keyword">false</span>, <span class="ruby-value">fill:</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">padding:</span><span class="ruby-ivar">@pad</span>)
+              <span class="ruby-identifier">nbEtoile</span>=<span class="ruby-constant">Text</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@overAllStars</span>)
+
+              <span class="ruby-identifier">nbEtoile</span>.<span class="ruby-identifier">title</span>
+              <span class="ruby-ivar">@etoileTotal</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-identifier">nbEtoile</span>.<span class="ruby-identifier">gtkObject</span>,<span class="ruby-value">expand:</span> <span class="ruby-keyword">false</span>, <span class="ruby-value">fill:</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">padding:</span><span class="ruby-ivar">@pad</span>)
+
+              <span class="ruby-ivar">@boxV</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-ivar">@scrol</span>.<span class="ruby-identifier">gtkObject</span>,<span class="ruby-value">expand:</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">fill:</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">padding:</span> <span class="ruby-ivar">@pad</span>)
+
+              <span class="ruby-ivar">@nbNiveau</span>=<span class="ruby-ivar">@adventure</span>.<span class="ruby-identifier">adventureInfo</span>.<span class="ruby-identifier">levels</span>.<span class="ruby-identifier">length</span>
+              <span class="ruby-identifier">l</span>=<span class="ruby-ivar">@ic</span>.<span class="ruby-identifier">iconAsset</span>.<span class="ruby-identifier">fetch</span>(<span class="ruby-value">:loc</span>)
+
+  <span class="ruby-ivar">@b</span>=<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Box</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:horizontal</span>, <span class="ruby-value">25</span>)
+              <span class="ruby-ivar">@scrol</span>.<span class="ruby-identifier">add</span>(<span class="ruby-ivar">@b</span>)
+
+              <span class="ruby-ivar">@icones</span>=<span class="ruby-constant">LevelNumbers</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">manager</span>,<span class="ruby-ivar">@adventure</span> ,<span class="ruby-ivar">@adventure</span>.<span class="ruby-identifier">overAllStarsHash</span>)
+              <span class="ruby-ivar">@b</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-ivar">@icones</span>.<span class="ruby-identifier">im</span>,<span class="ruby-value">expand:</span> <span class="ruby-keyword">false</span>, <span class="ruby-value">fill:</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">padding:</span> <span class="ruby-ivar">@pad</span>)
+  <span class="ruby-ivar">@menuR</span>=<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Box</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:horizontal</span>, <span class="ruby-value">25</span>)
+              <span class="ruby-ivar">@scrol</span>.<span class="ruby-identifier">add</span>(<span class="ruby-ivar">@menuR</span>)
+
+              <span class="ruby-identifier">retour</span>=<span class="ruby-constant">Text</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@textManager</span>.<span class="ruby-identifier">getButtonLabel</span>(<span class="ruby-string">&quot;adventure&quot;</span>, <span class="ruby-string">&quot;back&quot;</span>))
+  <span class="ruby-ivar">@boxV</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-identifier">retour</span>.<span class="ruby-identifier">gtkObject</span> ,<span class="ruby-value">expand:</span> <span class="ruby-keyword">false</span>, <span class="ruby-value">fill:</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">padding:</span><span class="ruby-ivar">@pad</span>)
+      <span class="ruby-identifier">retour</span>.<span class="ruby-identifier">onClick</span>{
+                      <span class="ruby-identifier">manager</span>.<span class="ruby-identifier">session</span>.<span class="ruby-identifier">updateSave</span>
+                      <span class="ruby-identifier">manager</span>.<span class="ruby-identifier">updateSave</span>
+      <span class="ruby-identifier">manager</span>.<span class="ruby-identifier">mainScreen</span>.<span class="ruby-identifier">applyOn</span>(<span class="ruby-ivar">@parent</span>)
+              }
+  <span class="ruby-ivar">@gtkObject</span>.<span class="ruby-identifier">attach</span>(<span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">pixbuf:</span> <span class="ruby-ivar">@buffer</span>),<span class="ruby-value">0</span>,<span class="ruby-value">3</span>,<span class="ruby-value">0</span>,<span class="ruby-value">3</span>)
+      <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-applyOn" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">applyOn</span><span
+            class="method-args">(widget)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h5 id="method-i-applyOn-label-Presentation">Presentation<span><a href="#method-i-applyOn-label-Presentation">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>This method is used to refresh the page by calling the method refresh of the class <a href="LevelNumbers.html"><code>LevelNumbers</code></a></p>
+
+<h5 id="method-i-applyOn-label-Attributes">Attributes<span><a href="#method-i-applyOn-label-Attributes">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<pre>*+widget+ : the widget associated</pre>
+
+<h5 id="method-i-applyOn-label-Return">Return<span><a href="#method-i-applyOn-label-Return">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<pre>this method return the widget refreshed</pre>
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              <a href="Screen.html#method-i-applyOn"><code>Screen#applyOn</code></a>
+            </div>
+          
+
+          
+          <div class="method-source-code" id="applyOn-source">
+            <pre><span class="ruby-comment"># File Ui/Screens/LevelSelectionScreen.rb, line 114</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">applyOn</span>(<span class="ruby-identifier">widget</span>)
+        <span class="ruby-identifier">refreshOverAllStar</span>
+        <span class="ruby-ivar">@icones</span>.<span class="ruby-identifier">refresh</span>(<span class="ruby-ivar">@manager</span>,<span class="ruby-ivar">@adventure</span>,<span class="ruby-ivar">@adventure</span>.<span class="ruby-identifier">overAllStarsHash</span>)
+        <span class="ruby-keyword">super</span>(<span class="ruby-identifier">widget</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-refreshOverAllStar" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">refreshOverAllStar</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h5 id="method-i-refreshOverAllStar-label-Presentation">Presentation<span><a href="#method-i-refreshOverAllStar-label-Presentation">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>This method is used to refresh star&#39;s icons</p>
+
+<h5 id="method-i-refreshOverAllStar-label-Return">Return<span><a href="#method-i-refreshOverAllStar-label-Return">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<pre>this method return the box etoileTotal which contain all the stars</pre>
+          
+          
+
+          
+          <div class="method-source-code" id="refreshOverAllStar-source">
+            <pre><span class="ruby-comment"># File Ui/Screens/LevelSelectionScreen.rb, line 95</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">refreshOverAllStar</span>
+        <span class="ruby-ivar">@etoileTotal</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">child</span><span class="ruby-operator">|</span>
+                <span class="ruby-ivar">@etoileTotal</span>.<span class="ruby-identifier">remove</span>(<span class="ruby-identifier">child</span>)
+        }
+        <span class="ruby-ivar">@st</span>=<span class="ruby-constant">Star</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>,<span class="ruby-value">1</span>)
+        <span class="ruby-ivar">@etoileTotal</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-ivar">@st</span>.<span class="ruby-identifier">stars</span>,<span class="ruby-value">expand:</span> <span class="ruby-keyword">false</span>, <span class="ruby-value">fill:</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">padding:</span><span class="ruby-ivar">@pad</span>)
+        <span class="ruby-identifier">nbEtoile</span>=<span class="ruby-constant">Text</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@adventure</span>.<span class="ruby-identifier">overAllStars</span>.<span class="ruby-identifier">to_s</span>)
+        <span class="ruby-identifier">nbEtoile</span>.<span class="ruby-identifier">title</span>
+        <span class="ruby-ivar">@etoileTotal</span>.<span class="ruby-identifier">pack_start</span>(<span class="ruby-identifier">nbEtoile</span>.<span class="ruby-identifier">gtkObject</span>,<span class="ruby-value">expand:</span> <span class="ruby-keyword">false</span>, <span class="ruby-value">fill:</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">padding:</span><span class="ruby-ivar">@pad</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
